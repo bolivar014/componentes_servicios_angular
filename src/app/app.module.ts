@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ImgComponent } from './components/img/img.component';
+// Importamos modulo HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 // Importamos FormsModule
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
@@ -18,7 +21,8 @@ import { NavComponent } from './components/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

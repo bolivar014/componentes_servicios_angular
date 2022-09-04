@@ -36,7 +36,8 @@
 [*] Creación de servicios
     ng g s services/store
 
-[*]
+[*] HTTP API
+      https://fakestoreapi.com/products
 
 [*]
 

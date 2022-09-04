@@ -37,10 +37,10 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     // Before Render
     // Async - Fetch - promises - Once Time
     console.log('ngOnChanges', 'imgValue => ', this.img);
-    this.counterFn = window.setInterval(() => {
-      this.counter += 1;
-      console.log('counter: ', this.counter);
-    }, 1000)
+    // this.counterFn = window.setInterval(() => {
+    //   this.counter += 1;
+    //   console.log('counter: ', this.counter);
+    // }, 1000)
   }
 
   // Evento para control de error - cuando no existe imagen
@@ -65,6 +65,6 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     // Delete
     console.log('ngOnDestroy');
     // Limpiamos timer
-    window.clearInterval(this.counterFn);
+    // window.clearInterval(this.counterFn);
   }
 }

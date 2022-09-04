@@ -9,6 +9,10 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductsComponent implements OnInit {
 
+  // Array en vació de productos
+  myShoppingCart: Product[] = [];
+  total= 0;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -38,4 +42,13 @@ export class ProductsComponent implements OnInit {
       price: 543
     }
   ];
+
+  // Evento para agregar
+  onAddToShoppingCart(product: Product) {
+    // console.log(product);
+    // Agregamos nuevo producto
+    this.myShoppingCart.push(product);
+    // this.total += product.price;
+    this.total = this.myShoppingCart.reduce((sum, item) => sum + item.price, 0);
+  }
 }

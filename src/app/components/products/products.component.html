@@ -4,6 +4,15 @@
 <p>
   Su valor total es {{ total }}
 </p>
+<p>
+  Today: {{ today | date:'short' }}
+</p>
+<p>
+  otra Fecha: {{ date | date:'yyyy.dd.MM' }}
+</p>
+<p>
+  {{ 'hola' | uppercase }}
+</p>
 <div class="products--grid">
   <app-product [product]="product" *ngFor="let product of products" (addedProduct)="onAddToShoppingCart($event)"></app-product>
 </div>

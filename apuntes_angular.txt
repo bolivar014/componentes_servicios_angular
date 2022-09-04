@@ -39,7 +39,15 @@
 [*] HTTP API
       https://fakestoreapi.com/products
 
-[*]
+[*] Tipos de pipes
+
+    Angular posee por defecto algunos pipes que puedes utilizar para transformar números, fechas o cadenas de texto. Veamos los más importantes:
+
+      DatePipe: Modifica fechas de acuerdo al formato necesitado.
+      UpperCasePipe: Convierte todo el texto a mayúscula.
+      LowerCasePipe: Convierte todo el texto en minúscula.
+      CurrencyPipe: Convierte un número a la moneda o divisa necesitada.
+
 
 [*]
 

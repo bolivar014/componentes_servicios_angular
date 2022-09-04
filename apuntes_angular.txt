@@ -33,7 +33,8 @@
 [*] Creación de proyecto SCSS
     npm i --save-dev schematics-scss-migrate
 
-[*]
+[*] Creación de servicios
+    ng g s services/store
 
 [*]
 

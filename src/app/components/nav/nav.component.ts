@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  // Bandera
+  activeMenu = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  // Bandera para activar o inactivar botón
+  toggleMenu() {
+    this.activeMenu = !this.activeMenu;
   }
 
 }

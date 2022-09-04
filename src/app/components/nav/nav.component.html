@@ -1,6 +1,6 @@
 <div class="show-mobile">
   <div>
-    <button>
+    <button (click)="toggleMenu()">
       <img src="https://raw.githubusercontent.com/platzi/angular-componentes/4e39fb3cb8b9287318072def140d6b6282603993/src/assets/svg/icon_menu.svg" alt="menu">
     </button>
     <a href="">
@@ -9,6 +9,14 @@
     <a href="">
       <img src="https://raw.githubusercontent.com/platzi/angular-componentes/4e39fb3cb8b9287318072def140d6b6282603993/src/assets/svg/icon_shopping_cart.svg" alt="Logo">
     </a>
+  </div>
+  <div class="side-menu" [class.active]="activeMenu" >
+    <button (click)="toggleMenu()">Close</button>
+    <ul>
+      <li><a href="">All</a></li>
+      <li><a href="">Clothes</a></li>
+      <li><a href="">Electronics</a></li>
+    </ul>
   </div>
 </div>
 <div class="hide-mobile">

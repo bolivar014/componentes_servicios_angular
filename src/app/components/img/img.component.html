@@ -1,6 +1,6 @@
 <p>img works!</p>
 {{ img }}
-<img [src]="img" alt="" width="200" *ngIf="img; else elseImg">
+<img [src]="img" alt="" width="200" (error)="imgError()" (load)="imgLoaded()" *ngIf="img; else elseImg">
 <ng-template #elseImg>
-  <img src="https://pm1.narvii.com/7124/83568d283df6c34715a1cf898dae00ca5b57163ar1-720-1280v2_hq.jpg" alt="Default" width="200">
+  <img [src]="imageDefault" alt="Default" width="200">
 </ng-template>

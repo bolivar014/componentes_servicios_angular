@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { ImgComponent } from './components/img/img.component';
 // Importamos FormsModule
 import { FormsModule } from '@angular/forms';
+import { ProductComponent } from './components/product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ImgComponent
+    ImgComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

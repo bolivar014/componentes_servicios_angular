@@ -30,7 +30,8 @@
     NgOnDestroy: Corre cuando se elimina el componente.
 
 
-[*]
+[*] Creación de proyecto SCSS
+    npm i --save-dev schematics-scss-migrate
 
 [*]
 
